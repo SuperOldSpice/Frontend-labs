@@ -1,0 +1,285 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.8/tailwind.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.40/js/unitegallery.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.40/css/unite-gallery.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/unitegallery/1.7.40/themes/slider/ug-theme-slider.js"></script>
+
+    <script>
+        $(function () {
+            $("#accordion").accordion();
+        });
+
+        $(function () {
+            $("#datepicker").datepicker();
+        });
+
+        $(function () {
+            $("#menu").menu();
+        });
+
+        $(function () {
+            $("#slider").slider();
+        });
+
+        $(function () {
+            $("#tabs").tabs();
+        });
+
+        $(function () {
+            $(document).tooltip();
+        });
+
+        $(document).ready(function () {
+            $("#gallery").unitegallery();
+        });
+
+    </script>
+
+    <style>
+        .ui-menu {
+            width: 150px;
+        }
+
+        label {
+            display: inline-block;
+            width: 5em;
+        }
+    </style>
+
+
+</head>
+
+<body class="bg-indigo-50 text-gray-800 px-6 md:px-16 lg:px-32" >
+
+    <div class="bg-gray-50 w-full my-16 p-6 md:p-10 rounded-md">
+        <div class="font-bold text-center pb-10">
+            <h1 class="text-2xl">Приклади використання jQuery</h1>
+        </div>
+
+        <div class="mt-16 flex">
+            <div class="w-1/4">
+                <div class="pr-10">
+                    <h1 class="font-bold text-xl mb-8">Функції</h1>
+                    <div class="flex flex-col space-y-4 text-lg font-bold text-blue-600">
+                        <a href="#func1">Accordion</a>
+                        <a href="#func2">Datepicker</a>
+                        <a href="#func3">Menu</a>
+                        <a href="#func4">Slider</a>
+                        <a href="#func5">Tabs</a>
+                        <a href="#func6">Tooltip</a>
+                        <a href="#func7">Галерея</a>
+                        <a href="#func8">Social Media</a>
+                        <a href="#func11">Дата і час</a>
+                        <a href="#func7">Модуль для медіа</a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-3/4 shadow-lg rounded-2xl p-8" style="overflow:scroll; height:600px;">
+
+                <div class="mt-16 font-bold text-2xl text-gray-700">
+                    <h1 class="text-3xl mb-8">Виконання</h1>
+
+                    <p id="func1" class="mb-4">Accordion</p>
+                    <div id="accordion">
+                        <h3>Section 1</h3>
+                        <div>
+                            <p>
+                                Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                                ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                            </p>
+                        </div>
+                        <h3>Section 2</h3>
+                        <div>
+                            <p>
+                                Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+                                purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+                            </p>
+                        </div>
+                        <h3>Section 3</h3>
+                        <div>
+                            <p>
+                                Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+                                Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+                            </p>
+                        </div>
+                    </div>
+
+                    <p id="func2" class="mt-6 mb-4">Datepicker</p>
+                    <p>Date: <input type="text" id="datepicker" class="ml-4 border border-blue-600 rounded-lg"></p>
+
+                    <p id="func3" class="mt-6 mb-4">Menu</p>
+                    <ul id="menu">
+                        <li>
+                            <div>Books</div>
+                        </li>
+                        <li>
+                            <div>Movies</div>
+                        </li>
+                        <li>
+                            <div>Music</div>
+                            <ul>
+                                <li>
+                                    <div>Rock</div>
+                                    <ul>
+                                        <li>
+                                            <div>Classic</div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div>Jazz</div>
+                                    <ul>
+                                        <li>
+                                            <div>Freejazz</div>
+                                        </li>
+                                        <li>
+                                            <div>Big Band</div>
+                                        </li>
+                                        <li>
+                                            <div>Modern</div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div>Pop</div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <p id="func4" class="mt-6 mb-4">Slider</p>
+                    <div id="slider"></div>
+
+                    <p id="func5" class="mt-6 mb-4">Tabs</p>
+                    <div id="tabs">
+                        <ul>
+                            <li><a href="#tabs-1">Tab 1</a></li>
+                            <li><a href="#tabs-2">Tab 2</a></li>
+                            <li><a href="#tabs-3">Tab3</a></li>
+                        </ul>
+                        <div id="tabs-1">
+                            <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu.
+                                Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam
+                                aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper
+                                leo. Vivamus sed magna quis ligula eleifend adipiscing.</p>
+                        </div>
+                        <div id="tabs-2">
+                            <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra
+                                massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus
+                                malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet
+                                fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam.</p>
+                        </div>
+                        <div id="tabs-3">
+                            <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede
+                                vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum
+                                non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                                inceptos himenaeos. Fusce sodales. Duis scelerisque molestie turpis.</p>
+                        </div>
+                    </div>
+
+                    <p id="func6" class="mt-6 mb-4">Tooltip</p>
+                    <p><input id="age" title="Поле вводу"
+                            class="border border-blue-600 rounded-lg"></p>
+
+                    <p id="func7" class="mt-6 mb-2">Галерея</p>
+                    <p class="text-base mt-3">Фотогалерея з можливістю перегляду збільшених зображень</p>
+                    <p class="text-base mt-1 mb-6">Слайдер фотографій та відеоматеріалів</p>
+
+                    <div>
+                        <div id="gallery" style="display:none;">
+                            <img alt="Image 1 Title" src="http://twdesign.ch/images/gallery/thumb3.jpg"
+                                data-image="http://twdesign.ch/images/gallery/image3.jpg"
+                                data-description="Description">
+                            <img alt="Image 2 Title" src="http://twdesign.ch/images/gallery/thumb8.jpg"
+                                data-image="http://twdesign.ch/images/gallery/image8.jpg">
+                            <img alt="Youtube Video" data-type="youtube" data-videoid="BHACKCNDMW8" data-description="">
+                        </div>
+                    </div>
+
+                    <script type="text/javascript">
+
+                        jQuery(document).ready(function () {
+
+                            jQuery("#gallery").unitegallery({ slider_control_zoom: false });
+
+                        });
+
+                    </script>
+
+
+                    <p id="func8" class="mt-6 mb-4">Social Media</p>
+                    <div class="container mx-auto py-4">
+                        <div class="grid grid-cols-3 gap-4 md:flex md:space-x-6">
+                            <!-- Facebook -->
+                            <a href=""
+                                class="text-white bg-blue-600 hover:bg-blue-800 transition-colors duration-200 w-16 h-16 md:w-20 md:h-20 rounded-full flex justify-center items-center flex-none">
+                                <svg class="w-5 h-5 md:w-6 md:h-6" viewBox="0 0 1792 1792"
+                                    xmlns="http://www.w3.org/2000/svg" fill="#fff">
+                                    <path
+                                        d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z" />
+                                </svg>
+                            </a>
+                            <!-- Twitter -->
+                            <a href=""
+                                class="text-white bg-blue-600 hover:bg-blue-800 transition-colors duration-200 w-16 h-16 md:w-20 md:h-20 rounded-full flex justify-center items-center flex-none">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 172 172"
+                                    fill="#fff">
+                                    <g>
+                                        <path d="M0,172v-172h172v172z" fill="none"></path>
+                                        <g>
+                                            <path
+                                                d="M172,30.82226c-6.4388,2.85547 -12.9056,5.01107 -20.07226,5.73894c7.16667,-4.3112 12.9056,-11.47787 15.76107,-19.3724c-7.16667,4.31119 -14.33333,7.16667 -22.19988,8.6224c-7.16667,-7.16667 -16.48893,-11.47787 -26.51106,-11.47787c-19.3724,0 -35.13347,15.76107 -35.13347,35.10547c0,2.88346 0,5.73893 0.72786,7.89453c-29.39453,-1.42774 -55.17773,-15.06119 -72.39453,-36.56119c-3.58333,5.03906 -5.01107,11.47786 -5.01107,17.91667c0,12.20573 6.43881,22.95573 15.76107,29.39453c-5.73893,-0.72786 -11.44987,-2.1556 -15.76107,-4.31119c0,0 0,0 0,0.72786c0,17.18881 12.17774,31.52214 27.93881,34.4056c-2.85547,0.69988 -5.71094,1.42774 -9.29427,1.42774c-2.1556,0 -4.3112,0 -6.4668,-0.72786c4.31119,14.33333 17.2168,24.38346 32.97786,24.38346c-12.17773,9.32227 -27.23893,15.03321 -43.72786,15.03321c-2.85547,0 -5.73893,0 -8.5944,-0.69988c15.76107,10.02214 34.4056,15.76107 53.75,15.76107c65.22787,0 100.33333,-53.75 100.33333,-100.33333c0,-1.42774 0,-2.85547 0,-4.31119c7.16667,-5.01107 12.9056,-11.44988 17.91667,-18.61654">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </a>
+                            <!-- Instagram -->
+                            <a href=""
+                                class="text-white bg-blue-600 hover:bg-blue-800 transition-colors duration-200 w-16 h-16 md:w-20 md:h-20 rounded-full flex justify-center items-center flex-none">
+                                <svg width="26" height="26" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"
+                                    fill="#fff">
+                                    <path
+                                        d="M1152 896q0-106-75-181t-181-75-181 75-75 181 75 181 181 75 181-75 75-181zm138 0q0 164-115 279t-279 115-279-115-115-279 115-279 279-115 279 115 115 279zm108-410q0 38-27 65t-65 27-65-27-27-65 27-65 65-27 65 27 27 65zm-502-220q-7 0-76.5-.5t-105.5 0-96.5 3-103 10-71.5 18.5q-50 20-88 58t-58 88q-11 29-18.5 71.5t-10 103-3 96.5 0 105.5.5 76.5-.5 76.5 0 105.5 3 96.5 10 103 18.5 71.5q20 50 58 88t88 58q29 11 71.5 18.5t103 10 96.5 3 105.5 0 76.5-.5 76.5.5 105.5 0 96.5-3 103-10 71.5-18.5q50-20 88-58t58-88q11-29 18.5-71.5t10-103 3-96.5 0-105.5-.5-76.5.5-76.5 0-105.5-3-96.5-10-103-18.5-71.5q-20-50-58-88t-88-58q-29-11-71.5-18.5t-103-10-96.5-3-105.5 0-76.5.5zm768 630q0 229-5 317-10 208-124 322t-322 124q-88 5-317 5t-317-5q-208-10-322-124t-124-322q-5-88-5-317t5-317q10-208 124-322t322-124q88-5 317-5t317 5q208 10 322 124t124 322q5 88 5 317z" />
+                                </svg>
+                            </a>
+                            <!-- Telegram -->
+                            <a href=""
+                                class="text-white bg-blue-600 hover:bg-blue-800 transition-colors duration-200 w-16 h-16 md:w-20 md:h-20 rounded-full flex justify-center items-center flex-none">
+                                <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="30"
+                                    height="30">
+                                    <path
+                                        d="M46.137,6.552c-0.75-0.636-1.928-0.727-3.146-0.238l-0.002,0C41.708,6.828,6.728,21.832,5.304,22.445	c-0.259,0.09-2.521,0.934-2.288,2.814c0.208,1.695,2.026,2.397,2.248,2.478l8.893,3.045c0.59,1.964,2.765,9.21,3.246,10.758	c0.3,0.965,0.789,2.233,1.646,2.494c0.752,0.29,1.5,0.025,1.984-0.355l5.437-5.043l8.777,6.845l0.209,0.125	c0.596,0.264,1.167,0.396,1.712,0.396c0.421,0,0.825-0.079,1.211-0.237c1.315-0.54,1.841-1.793,1.896-1.935l6.556-34.077	C47.231,7.933,46.675,7.007,46.137,6.552z M22,32l-3,8l-3-10l23-17L22,32z" />
+                                </svg>
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <p id="func11" class="mt-6 mb-4">Дата і час</p>
+                    <script language="JavaScript">
+                        function fulltime() {
+                            var time = new Date();
+                            document.clock.full.value = time.toLocaleString();
+                            setTimeout('fulltime()', 500)
+                        }
+                    </script>
+                    <form name="clock"><input size="28" name="full"></form>
+                    <script language="JavaScript">
+                        fulltime();
+                    </script>
+
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
